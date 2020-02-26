@@ -43,3 +43,10 @@ calculatorInputs[1].addEventListener("click", handleInputClick);
 
 handleInputClick.forEach(addInputEventListener);*/
 
+function addInputEventListener(calculatorInput) {
+  function handleCalculatorInputClick() {
+    calculatorOutput.value = calculatorInput.innerText;
+  }
+  calculatorInput.addEventListener("click", handleCalculatorInputClick);
+}
+calculatorInputs.forEach(addInputEventListener);
