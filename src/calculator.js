@@ -34,3 +34,19 @@ function handleClear() {
   console.log("cleared");
 }
 calculatorClear.addEventListener("click", handleClear);
+
+/*function handleInputClick() {
+  console.log("Handle input click");
+}
+calculatorInputs[0].addEventListener("click", handleInputClick);
+calculatorInputs[1].addEventListener("click", handleInputClick);
+
+handleInputClick.forEach(addInputEventListener);*/
+
+function addInputEventListener(calculatorInput) {
+  function handleCalculatorInputClick() {
+    calculatorOutput.value = calculatorInput.innerText;
+  }
+  calculatorInput.addEventListener("click", handleCalculatorInputClick);
+}
+calculatorInputs.forEach(addInputEventListener);
