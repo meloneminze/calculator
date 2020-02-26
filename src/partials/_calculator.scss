@@ -6,15 +6,30 @@
 }
 
 .calculator__output {
-  flex-basis: 100%;
+  flex-basis: calc(100% / 4 * 3);
   background-color: rgb(210, 218, 214);
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .calculator__input {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 4);
   color: rgb(161, 223, 192);
   background-color: rgb(117, 122, 120);
-  font-size: 40px;
+  font-size: 25px;
   outline: none;
+}
+
+.calculator__clear {
+  flex-basis: calc(100% / 4);
+  background-color: rgb(245, 147, 130);
+}
+
+.calculator__operator {
+  flex-basis: calc(100% / 4);
+  background-color: rgb(139, 126, 123);
+}
+
+.calculator__result {
+  flex-basis: calc(100% / 4);
+  background-color: rgb(167, 77, 59);
 }
