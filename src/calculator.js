@@ -1,5 +1,5 @@
 //document.querySelector(".calculator__output").value = "13";
-import { add, subtract, multiply, divide } from "./math.js";
+import { add } from "./math.js";
 
 const calculatorOutput = document.querySelector(".calculator__output");
 const calculatorInputs = document.querySelectorAll(".calculator__input");
@@ -9,6 +9,7 @@ const calculatorOperators = document.querySelectorAll(".calculator__operator");
 
 let numberOne = 0;
 let numberTwo = 0;
+
 
 function handleResultClick() {
   numberTwo = Number(calculatorOutput.value);
