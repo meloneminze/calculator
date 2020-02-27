@@ -10,7 +10,6 @@ const calculatorOperators = document.querySelectorAll(".calculator__operator");
 let numberOne = 0;
 let numberTwo = 0;
 
-
 function handleResultClick() {
   numberTwo = Number(calculatorOutput.value);
   calculatorOutput.value = add(numberOne, numberTwo);
